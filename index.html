@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <section class="header pc-wrapper">
+      <nav class="logo">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skill">Skill</a></li>
+          <li><a href="#index.html">Kojima Portfolio</a></li>
+          <li><a href="#works">Works</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="hamburger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </section>
+  </header>
+
+  <main>
+    <section class="fv pc-wrapper">
+      <div class="fv-text">
+        <h1>わかりやすく、使いやすいWebを。</h1>
+        <p>目的が伝わり、行動につながるサイトを、<br>丁寧なヒアリングから制作します。</p>
+        <p>ご相談いただいた内容をしっかり理解し、<br>「何を作るか」より「何のために作るか」を大切にしています。</p>
+      </div>
+
+      <div class="fv-scroll">
+        <p>SCROLL</p>
+        <span class="fv-triangle"></span>
+      </div>
+    </section>
+
+    <section class="works" id="works">
+      <h2>Works</h2>
+
+      <div class="works-flex">
+        <div class="work work-1" data-id="1">
+            <img src="img/dog.png" alt="サイト模写">
+            <div class="work-text">
+              <p>Webサイト模写</p>
+              <p>HTML/CSSを使ったコーディング</p>
+            </div>
+        </div>
+
+        <div class="work work-2" data-work="2" data-id="2">
+            <img src="img/sneak.png" alt="サイト模写">
+            <div class="work-text">
+              <p>Webサイト模写</p>
+              <p>JavaScriptを取り入れたコーディング</p>
+            </div>
+        </div>
+
+        <div class="work work-3" data-work="3" data-id="3">
+            <img src="img/ogp.png" alt="デザインカンプからのコーディング">
+            <div class="work-text">
+              <p>実案件のコーディング</p>
+              <p>デザインカンプからのコーディング</p>
+            </div>
+        </div>
+      </div>
+
+      <div class="modal" id="modal">
+        <div class="modal-box">
+          <div class="modal-content">
+            <button class="close">
+              <span></span>
+              <span></span>
+            </button>
+
+            <p class="modal-title"></p>
+            <p class="modal-desc"></p>
+
+            <div class="modal-img">
+              <img id="modal-imagepc" alt="模写ｐｃ画面" class="img-pc">
+              <img id="modal-imagesp" alt="模写ｓｐ画面" class="img-sp">
+            </div>
+
+            <a href="" id="modal-link" target="_blank" rel="noopener" class="site-link">実際のサイトを見る</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/main.js" defer></script>
+</body>
+
+</html>
