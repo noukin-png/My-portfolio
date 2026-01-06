@@ -11,20 +11,34 @@
 <body>
   <header>
     <section class="header pc-wrapper">
+
+      <nav class="nav" id="nav">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skill">Skill</a></li>
+          <li><a href="index.html">Kojima Portfolio</a></li>
+          <li><a href="#works">Works</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="mask" id="mask"></div>
+
       <nav class="logo">
         <ul>
           <li><a href="#about">About</a></li>
           <li><a href="#skill">Skill</a></li>
-          <li><a href="#index.html">Kojima Portfolio</a></li>
+          <li><a href="index.html">Kojima Portfolio</a></li>
           <li><a href="#works">Works</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-        <button class="hamburger-menu">
+        <button class="hamburger" id="hamburger">
           <span></span>
           <span></span>
           <span></span>
         </button>
       </nav>
+
     </section>
   </header>
 
@@ -47,27 +61,27 @@
 
       <div class="works-flex">
         <div class="work work-1" data-id="1">
-            <img src="img/dog.png" alt="サイト模写">
-            <div class="work-text">
-              <p>Webサイト模写</p>
-              <p>HTML/CSSを使ったコーディング</p>
-            </div>
+          <img src="img/dog.png" alt="サイト模写">
+          <div class="work-text">
+            <p>Webサイト模写</p>
+            <p>HTML/CSSを使ったコーディング</p>
+          </div>
         </div>
 
         <div class="work work-2" data-work="2" data-id="2">
-            <img src="img/sneak.png" alt="サイト模写">
-            <div class="work-text">
-              <p>Webサイト模写</p>
-              <p>JavaScriptを取り入れたコーディング</p>
-            </div>
+          <img src="img/sneak.png" alt="サイト模写">
+          <div class="work-text">
+            <p>Webサイト模写</p>
+            <p>JavaScriptを取り入れたコーディング</p>
+          </div>
         </div>
 
         <div class="work work-3" data-work="3" data-id="3">
-            <img src="img/ogp.png" alt="デザインカンプからのコーディング">
-            <div class="work-text">
-              <p>実案件のコーディング</p>
-              <p>デザインカンプからのコーディング</p>
-            </div>
+          <img src="img/ogp.png" alt="デザインカンプからのコーディング">
+          <div class="work-text">
+            <p>実案件のコーディング</p>
+            <p>デザインカンプからのコーディング</p>
+          </div>
         </div>
       </div>
 
@@ -92,7 +106,103 @@
         </div>
       </div>
     </section>
+
+    <section class="skills pc-wrapper" id="skill">
+      <h2>SKILL</h2>
+      <div class="skill-flex">
+        <div class="skill">
+          <img src="img/icons8-html-100.png" alt="HTML">
+          <p>
+            <span>伝えた情報を、正しく整理して届けます。</span><br>「何を伝いていのか」「どこを見てほしいのか」を整理し、文章や構成を分かりやすくページに落とし込みます。
+          </p>
+        </div>
+        <div class="skill">
+          <img src="img/icons8-css-100.png" alt="HTML">
+          <p>
+            <span>初めて見た人でも、迷わないデザインに。</span><br>文字の大きさや余白、色の使い方を調整し、だれにとっても見やすく、使いやすい画面を作ります。
+          </p>
+        </div>
+        <div class="skill">
+          <img src="img/icons8-javascript-100.png" alt="HTML">
+          <p>
+            <span>操作しやすい動きで、体験を向上させます。</span><br>必要以上に複雑にせず、<br>わかりやすさを優先した実装を心がけています。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about-flex">
+        <div class="about-img">
+          <img src="img/boy.png" alt="">
+        </div>
+
+        <div class="about-text">
+          <p>自分について</p>
+          <h2>About</h2>
+          <div class="text">
+            <p>小嶋　大誠</p>
+            <p>Kojima Taisei</p>
+            <p>高卒で社会人として働き始め、現在三年目になります。</p>
+            <p>プログラミングは未経験からのスタートで、約4か月でＷｅｂ制作の実務レベルまで身に付けてきました。
+              <br>まだ学び続ける立場ではありますが、
+              一つ一つのご依頼に真摯に向き合い、
+              <span>「頼んでよかった」</span>と思っていただけるＷｅｂ制作を心がけています。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="hobby">
+      <h2>趣味</h2>
+      <div class="hobby-flex">
+        <div class="hobby-item">
+          <img src="img/33991903_s.jpg" alt="">
+          <p>キャンプ</p>
+        </div>
+
+        <div class="hobby-item">
+          <img src="img/33566717_s.jpg" alt="">
+          <p>絶景スポット巡り</p>
+        </div>
+
+        <div class="hobby-item">
+          <img src="img/33950039_s.jpg" alt="">
+          <p>動物と触れ合う</p>
+        </div>
+      </div>
+    </section> -->
+
+    <section class="contact" id="contact">
+      <div class="contact-flex">
+        <div class="contact-text">
+          <p>お問い合わせ</p>
+          <h2>Contact</h2>
+          <div class="sns">
+            <a href="index.html" class="line"><button>LINE</button></a>
+            <a href="index.html" class="instagram"><button>Instagram</button></a>
+            <a href="index.html" class="gmail">
+              <button>
+                <span>G</span>
+                <span>m</span>
+                <span>a</span>
+                <span>i</span>
+                <span>l</span>
+              </button></a>
+          </div>
+        </div>
+
+        <div class="contact-img">
+          <img src="img/36 2.png" alt="">
+        </div>
+
+    </section>
   </main>
+
+  <footer class="footer">
+    <small>My Portfolio@2026</small>
+  </footer>
 
   <script src="js/main.js" defer></script>
 </body>

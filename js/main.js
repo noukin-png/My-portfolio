@@ -1,5 +1,28 @@
 'use strict';
 
+const hamburger = document.getElementById('hamburger');
+const nav = document.getElementById('nav');
+const mask = document.getElementById('mask');
+
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active');
+  nav.classList.toggle('active');
+  mask.classList.toggle('active');
+});
+
+nav.addEventListener('click', () => {
+  hamburger.classList.remove('active');
+  nav.classList.remove('active');
+  mask.classList.remove('active');
+})
+
+mask.addEventListener('click', () => {
+  hamburger.classList.remove('active');
+  nav.classList.remove('active');
+  mask.classList.remove('active');
+})
+
+
 const worksData = {
   1: {
     title: 'Webサイト模写',
