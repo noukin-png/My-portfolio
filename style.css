@@ -684,3 +684,166 @@ main {
   text-align: center;
   padding: 100px 0 20px;
 }
+
+@media screen and (max-width: 767px) {
+
+  .header {
+
+    .nav {
+      padding: 32px 18px;
+    }
+
+    .logo {
+
+      .hamburger{
+        right: 10px;
+      }
+
+      ul {
+        display: none;
+      }
+    }
+  }
+
+  .works {
+    padding: 0 50px;
+
+    .works-flex {
+      display: block;
+
+
+      .work {
+        width: 100%;
+        margin-top: 64px;
+      }
+    }
+  }
+
+  .skills {
+    padding: 0 50px;
+
+    .skill-flex {
+      display: block;
+
+      .skill {
+        width: 100%;
+        margin-top: 64px;
+
+        p {
+          margin-top: 18px;
+          font-size: clamp(12px, 1.5vw, 14px);
+
+          span {
+            font-weight: bold;
+            color: orange;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  .about {
+    padding: 0 50px;
+
+    .about-flex {
+      display: block;
+      width: 100%;
+
+
+      .about-img {
+        width: 100%;
+        justify-content: center;
+
+        img {
+          width: 60%;
+        }
+
+      }
+
+      .about-text {
+        width: 100%;
+
+        .text {
+
+          p {
+            &:nth-of-type(1) {
+              font-weight: bold;
+              font-size: 24px;
+              text-align: left;
+            }
+
+            &:nth-of-type(2) {
+              margin-bottom: 30px;
+              border-bottom: 2px solid rgba(255, 189, 68, 0.616);
+              width: 80%;
+            }
+
+            &:nth-of-type(3) {
+              line-height: 2;
+              font-size: clamp(14px, 1.5vw, 16px);
+            }
+
+            &:nth-of-type(4) {
+              line-height: 2;
+              font-size: clamp(14px, 1.5vw, 16px);
+            }
+          }
+
+          span {
+            color: orange;
+            font-weight: bold;
+            font-size: clamp(16px, 1.5vw, 18px);
+          }
+        }
+
+        .text {
+          padding: 0 18px 12px;
+        }
+      }
+    }
+  }
+
+  .contact {
+    padding: 64px 0 0;
+
+    .contact-flex {
+      display: block;
+
+      .contact-text {
+        width: 100%;
+
+        .sns {
+          width: 70%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          margin: 0 auto;
+
+          .line {
+            max-width: 100%;
+          }
+
+          .instagram {
+            max-width: 100%;
+          }
+
+          .gmail {
+            max-width: 100%;
+          }
+        }
+      }
+
+      .contact-img {
+        width: 70%;
+        margin: 0 auto;
+
+        img {
+          width: 100%;
+        }
+
+      }
+    }
+  }
+
+}
