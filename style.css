@@ -43,6 +43,7 @@ h2 {
     opacity: 0;
     z-index: 100;
     padding: 64px 20px;
+    overflow-y: auto;
 
     li {
       padding: 24px 0;
