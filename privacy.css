@@ -1,0 +1,313 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+h2 {
+  text-align: center;
+  font-size: 32px;
+}
+
+.pc-wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+.header {
+  width: 100%;
+  background: linear-gradient(to left, #008FFF 0%, #039BC7 32%, #06A78F 100%);
+
+  .nav {
+    position: fixed;
+    left: 0;
+    width: 300px;
+    height: 150vh;
+    background: white;
+    transform: translateX(-100%);
+    transition: transform 0.8s ease, opacity 0.8s ease;
+    opacity: 0;
+    z-index: 100;
+    padding: 64px 20px;
+    overflow-y: auto;
+
+    li {
+      padding: 24px 0;
+      border-top: 2px solid black;
+
+      &:nth-of-type(1) {
+        border-bottom: 2px solid black;
+      }
+
+
+      a {
+        color: black;
+        font-size: 20px;
+      }
+
+    }
+
+  }
+
+  .nav.active {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  .mask {
+    display: none;
+    position: fixed;
+    right: 0;
+    width: 100%;
+    height: 150vh;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 50;
+  }
+
+  .mask.active {
+    display: block;
+  }
+
+
+
+  .logo {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    ul {
+
+      li {
+        a {
+          color: black;
+          font-size: 22px;
+          letter-spacing: 2px;
+
+          &:hover {
+            opacity: 0.5;
+          }
+        }
+      }
+    }
+  }
+
+  .hamburger {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    width: 30px;
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 100;
+    flex-direction: column;
+
+    span {
+      display: block;
+      width: 100%;
+      height: 2px;
+      background: black;
+      transition: all 0.5s ease;
+    }
+
+  }
+
+  .hamburger.active span {
+
+    &:nth-of-type(1) {
+      transform: translateY(11px) rotate(315deg);
+      background: white;
+    }
+
+    &:nth-of-type(2) {
+      opacity: 0;
+      background: white;
+    }
+
+    &:nth-of-type(3) {
+      transform: translateY(-11px) rotate(-315deg);
+      background: white;
+    }
+  }
+
+}
+
+.fv {
+  background: linear-gradient(to left, #008FFF 0%, #039BC7 32%, #06A78F 100%);
+  height: auto;
+  padding: 190px 0 100px;
+  text-align: center;
+
+  .fv-text {
+    h1 {
+      margin-top: 45px;
+      font-size: 32px;
+    }
+
+    p {
+      margin-top: 45px;
+
+      &:nth-of-type(1) {
+        font-size: 24px;
+      }
+
+    }
+  }
+
+  .fv-scroll {
+    cursor: pointer;
+    max-width: 70px;
+    letter-spacing: 2px;
+    height: 30px;
+    margin: 0 auto;
+
+    p {
+      font-size: 16px;
+      margin-top: 200px;
+    }
+
+    .fv-triangle {
+
+      &::after {
+        content: "";
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border-right: 1px solid black;
+        border-bottom: 1px solid black;
+        transform: rotate(45deg);
+      }
+    }
+  }
+}
+
+.privacy {
+  max-width: 1200px;
+  padding: 100px;
+  margin: 0 auto;
+
+  h1 {
+    text-align: center;
+    margin: 60px 0;
+  }
+
+  p {
+    margin: 60px 0
+  }
+
+  ;
+}
+
+.footer {
+  background: #D9D9D9;
+  text-align: center;
+  padding: 100px 0 20px;
+
+  a {
+    color: black;
+    display: block;
+    width: 160px;
+    margin: 0 auto 50px;
+
+
+    &:hover {
+      opacity: 0.5;
+    }
+
+    p {
+      width: 160px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  .header {
+
+    .nav {
+      width: 70%;
+
+
+      ul {
+
+        li {
+          &:nth-of-type(3) {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .logo {
+      display: none;
+    }
+
+    .hamburger {
+      right: 10px;
+    }
+  }
+
+  .fv {
+    padding: 100px 0 100px;
+
+    .fv-text {
+      padding: 0 8px;
+
+      h1 {
+        margin-top: 45px;
+        font-size: 24px;
+      }
+
+      p {
+        margin-top: 45px;
+
+        &:nth-of-type(1) {
+          font-size: 16px;
+        }
+
+        &:nth-of-type(2) {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .works {
+    padding: 0 50px;
+
+    .works-flex {
+      display: block;
+
+
+      .work {
+        width: 100%;
+        margin-top: 64px;
+      }
+    }
+  }
+
+  .privacy {
+    padding: 100px 50px;
+  }
+}
